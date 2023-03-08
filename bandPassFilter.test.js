@@ -1,7 +1,7 @@
 const BandFilter = require ('./bandPassFilter.js')
 
 describe('Filter can be initialised', () => {
-    const freq = new BandFilter([]);
+    const freq = new BandFilter([]); //dont assume you will get an emprt array
 
     test('Filter can be initialised with an empty array', () => {
         expect(freq.input).toEqual([]);
